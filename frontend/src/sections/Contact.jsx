@@ -1,7 +1,38 @@
 import { motion } from "framer-motion"
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
+import { useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
+import toast from "react-hot-toast"
 
 const Contact = () => {
+  const form = useRef()
+  const [loading, setLoading] = useState(false)
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs
+      .sendForm(
+        "service_mpmus7h",
+        "template_fwzsosa",
+        form.current,
+        "D_96KYKbyOpMoL-2E"
+      )
+      .then(
+        () => {
+          toast.success("Message sent successfully 🚀")
+          form.current.reset()
+          setLoading(false)
+        },
+        (error) => {
+          console.log(error.text)
+          toast.error("Something went wrong ❌")
+          setLoading(false)
+        }
+      )
+  }
+
   return (
     <section id="contact" className="py-24 px-6 relative">
 
@@ -15,10 +46,9 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* Main Grid */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
-        {/* Left Info */}
+        {/* Left */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -26,29 +56,29 @@ const Contact = () => {
           className="space-y-6"
         >
           <h3 className="text-3xl font-semibold text-white">Let's Connect ✨</h3>
-          <p className="text-gray-400 leading-relaxed">
-            I’m open for discussions, projects, and collaborations. Feel free to reach out via the form or my social handles.
+          <p className="text-gray-400">
+            Feel free to reach out for projects or collaborations 👋
           </p>
 
-          {/* Email */}
           <div className="flex items-center gap-3 text-gray-300 text-lg">
             <FaEnvelope className="text-purple-400 text-xl" />
-            <span>bhumi@email.com</span>
+            <span>bhumi16124@gmail.com</span>
           </div>
 
-          {/* Social */}
           <div className="flex gap-5 pt-4 text-2xl">
-            <a href="#" className="hover:text-purple-400 transition transform hover:scale-110">
-              <FaGithub />
+            <a href="https://github.com/Bhumika-Sahu-bit" target="_blank">
+              <FaGithub className="hover:text-purple-400 transition hover:scale-110" />
             </a>
-            <a href="#" className="hover:text-purple-400 transition transform hover:scale-110">
-              <FaLinkedin />
+            <a href="https://www.linkedin.com/in/bhumika-sahu-b178a22b2/" target="_blank">
+              <FaLinkedin className="hover:text-purple-400 transition hover:scale-110" />
             </a>
           </div>
         </motion.div>
 
-        {/* Right Form */}
+        {/* Form */}
         <motion.form
+          ref={form}
+          onSubmit={sendEmail}
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -57,82 +87,45 @@ const Contact = () => {
             backdrop-blur-xl
             border border-white/20
             rounded-3xl
-            p-8 sm:p-10
+            p-8
             flex flex-col gap-5
-            shadow-lg
           "
         >
-          {/* Name */}
           <input
             type="text"
+            name="user_name"
             placeholder="Your Name"
-            className="
-              w-full
-              p-4
-              rounded-xl
-              bg-gray-900/60
-              border border-gray-700
-              text-white
-              placeholder-gray-400
-              focus:outline-none
-              focus:ring-2 focus:ring-purple-500
-              transition
-            "
+            required
+            className="p-4 rounded-xl bg-gray-900/60 border border-gray-700 text-white focus:ring-2 focus:ring-purple-500"
           />
 
-          {/* Email */}
           <input
             type="email"
+            name="user_email"
             placeholder="Your Email"
-            className="
-              w-full
-              p-4
-              rounded-xl
-              bg-gray-900/60
-              border border-gray-700
-              text-white
-              placeholder-gray-400
-              focus:outline-none
-              focus:ring-2 focus:ring-purple-500
-              transition
-            "
+            required
+            className="p-4 rounded-xl bg-gray-900/60 border border-gray-700 text-white focus:ring-2 focus:ring-purple-500"
           />
 
-          {/* Message */}
           <textarea
+            name="message"
             rows="5"
             placeholder="Your Message"
-            className="
-              w-full
-              p-4
-              rounded-xl
-              bg-gray-900/60
-              border border-gray-700
-              text-white
-              placeholder-gray-400
-              focus:outline-none
-              focus:ring-2 focus:ring-purple-500
-              transition
-            "
+            required
+            className="p-4 rounded-xl bg-gray-900/60 border border-gray-700 text-white focus:ring-2 focus:ring-purple-500"
           />
 
-          {/* Send Button */}
           <button
             type="submit"
-            className="
-              w-full
-              py-4
-              rounded-2xl
-              bg-gradient-to-r from-purple-500 to-pink-500
-              hover:scale-105
-              transform
-              transition
-              text-white
-              font-semibold
-              shadow-lg
-            "
+            disabled={loading}
+            className={`
+              py-4 rounded-2xl font-semibold text-white transition
+              ${loading
+                ? "bg-gray-600 cursor-not-allowed"
+                : "bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-105"}
+            `}
           >
-            Send Message 🚀
+            {loading ? "Sending..." : "Send Message 🚀"}
           </button>
         </motion.form>
       </div>
@@ -140,4 +133,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
