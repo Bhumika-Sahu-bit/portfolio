@@ -1,34 +1,39 @@
 import ExperienceCard from "../components/ExperienceCard"
+import certificate from "../assets/icons/certificate-bhumi.jpeg"
 
 const experiences = [
   {
-    date: "2025",
-    role: "Frontend Developer Intern",
-    company: "XYZ Company",
-    desc: "Built responsive UI components and improved website performance.",
-    tech: ["React", "Tailwind", "JS"],
+    date: "Feb 2025 - Mar 2025",
+    role: "Web Development Intern",
+    company: "TechnoML",
+    desc: "Completed a Web Development internship where I worked on real-world projects under professional guidance. Built responsive UI, improved performance, and followed clean coding practices.",
+    tech: ["HTML", "CSS", "JavaScript", "React"],
+    certificate: certificate, 
   },
+ {
+  date: "2025",
+  role: "Freelance",
+  company: "Kota Refrigeration",
+  desc: "Developed a responsive business website for a refrigeration service client. Implemented modern UI design, service showcase, and a functional contact system using EmailJS for real-time communication.",
+  tech: ["React", "Tailwind CSS", "EmailJS"],
+  live: "https://kota-refrigeration.vercel.app/"
+},
   {
-    date: "2024 - Present",
-    role: "Freelance Developer",
-    company: "Local Clients",
-    desc: "Created e-commerce and business websites for clients.",
-    tech: ["MERN", "MongoDB", "Node"],
-  },
-  {
-    date: "2024",
-    role: "Full Stack Developer",
-    company: "AICodeGen",
-    desc: "Developed AI-based website generator using Gemini API.",
-    tech: ["React", "AI", "Express"],
-  },
-  {
-    date: "Personal",
-    role: "DSA & Problem Solving",
-    company: "LeetCode Practice",
-    desc: "Solved 200+ problems and strengthened algorithms skills.",
-    tech: ["C++", "DSA", "Binary Search"],
-  },
+  date: "2025",
+  role: "Full Stack Developer",
+  company: "Multi-Code IDE",
+  desc: "Developed a cloud-based multi-language code editor that allows users to write and execute code directly in the browser. Integrated Monaco Editor for a VS Code-like experience, implemented authentication, and enabled real-time code execution using external APIs.",
+  tech: ["React (Vite)", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Monaco Editor", "Clerk Auth", "Glot API", "Framer Motion"],
+  live: "https://multi-code-ide-gray.vercel.app"
+}, 
+{
+  date: "2025",
+  role: "Full Stack AI Developer",
+  company: "AI Website Builder",
+  desc: "Built an AI-powered full-stack application that generates complete websites from user prompts using Groq AI. Implemented dynamic code generation, backend processing, and live preview functionality to enhance user experience.",
+  tech: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Groq API"],
+  live: "https://ai-website-builder-seven-chi.vercel.app/"
+}
 ]
 
 const Experience = () => {
@@ -45,10 +50,10 @@ const Experience = () => {
         </p>
       </div>
 
-      {/* Timeline wrapper */}
+      {/* Timeline */}
       <div className="relative max-w-6xl mx-auto space-y-16">
 
-        {/* Vertical line */}
+        {/* Line */}
         <div className="
           hidden md:block
           absolute left-1/2 top-0 bottom-0
