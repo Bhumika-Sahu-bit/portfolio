@@ -1,4 +1,6 @@
+
 // import { motion } from "framer-motion"
+
 // import {
 //   FaHtml5,
 //   FaCss3Alt,
@@ -7,7 +9,11 @@
 //   FaNodeJs,
 //   FaGitAlt,
 //   FaGithub,
+//   FaPhp,
+//   FaKey,
+//   FaUserShield
 // } from "react-icons/fa"
+
 // import {
 //   SiTailwindcss,
 //   SiFramer,
@@ -15,8 +21,16 @@
 //   SiMongodb,
 //   SiMysql,
 //   SiPostman,
-//   SiFigma,
 //   SiVercel,
+//   SiRender,
+//   SiCloudinary,
+//   SiNextdotjs,
+//   SiBootstrap,
+//   SiDocker,
+//   SiCplusplus,
+//   SiC,
+//   SiSocketdotio,
+//   SiRazorpay,
 // } from "react-icons/si"
 
 // const skillsData = [
@@ -27,32 +41,66 @@
 //       { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
 //       { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
 //       { name: "React", icon: <FaReact className="text-cyan-400" /> },
-//       { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
-//       { name: "Framer", icon: <SiFramer className="text-pink-400" /> },
+//       { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
+//       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
+//       { name: "Bootstrap", icon: <SiBootstrap className="text-purple-500" /> },
 //     ],
 //   },
+
 //   {
 //     title: "Backend",
 //     skills: [
 //       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-//       { name: "Express", icon: <SiExpress className="text-gray-300" /> },
+//       { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
+//       { name: "PHP", icon: <FaPhp className="text-indigo-400" /> },
+//       { name: "JWT Auth", icon: <FaKey className="text-yellow-300" /> },
+//       { name: "Nodemailer", icon: <SiPostman className="text-orange-400" /> },
+//       { name: "Clerk Auth", icon: <FaUserShield className="text-purple-400" /> },
+//       { name: "Socket.io", icon: <SiSocketdotio className="text-white" /> },
 //     ],
 //   },
+
 //   {
 //     title: "Database",
 //     skills: [
 //       { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
 //       { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
+//       { name: "IndexedDB", icon: <SiMongodb className="text-green-300" /> },
 //     ],
 //   },
+
 //   {
-//     title: "Tools",
+//     title: "AI & APIs",
+//     skills: [
+//       { name: "Groq API", icon: <SiFramer className="text-orange-400" /> },
+//       { name: "OpenRouter API", icon: <SiFramer className="text-green-400" /> },
+//       { name: "Gemini API", icon: <SiFramer className="text-blue-400" /> },
+//       { name: "EmailJS", icon: <SiPostman className="text-yellow-400" /> },
+//       { name: "Cloudinary", icon: <SiCloudinary className="text-blue-400" /> },
+//       { name: "Razorpay", icon: <SiRazorpay className="text-blue-500" /> },
+//       { name: "Glot.io API", icon: <FaJs className="text-yellow-400" /> },
+//     ],
+//   },
+
+//   {
+//     title: "Languages & Core",
+//     skills: [
+//       { name: "C++ (DSA)", icon: <SiCplusplus className="text-blue-500" /> },
+//       { name: "C", icon: <SiC className="text-blue-400" /> },
+//       { name: "DSA", icon: <FaJs className="text-yellow-300" /> },
+//     ],
+//   },
+
+//   {
+//     title: "Tools & Platforms",
 //     skills: [
 //       { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
 //       { name: "GitHub", icon: <FaGithub className="text-gray-200" /> },
 //       { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
-//       { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
 //       { name: "Vercel", icon: <SiVercel className="text-white" /> },
+//       { name: "Render", icon: <SiRender className="text-blue-400" /> },
+//       { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
+//       { name: "Cursor AI", icon: <FaJs className="text-purple-400" /> },
 //     ],
 //   },
 // ]
@@ -79,7 +127,7 @@
 //         </h2>
 //       </motion.div>
 
-//       {/* 2x2 Grid */}
+//       {/* Grid */}
 //       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 //         {skillsData.map((category, idx) => (
 //           <motion.div
@@ -90,13 +138,13 @@
 //             viewport={{ once: true }}
 //             className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:shadow-lg transition"
 //           >
-//             {/* Category Title */}
+//             {/* Title */}
 //             <h3 className="text-xl font-semibold text-white text-center mb-6">
 //               {category.title}
 //             </h3>
 
-//             {/* Skills Grid */}
-//             <div className="grid grid-cols-3 gap-6 place-items-center">
+//             {/* Skills */}
+//             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 place-items-center">
 //               {category.skills.map((skill, i) => (
 //                 <motion.div
 //                   key={i}
@@ -120,6 +168,7 @@
 // export default Skills
 
 import { motion } from "framer-motion"
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -130,22 +179,32 @@ import {
   FaGithub,
   FaPhp,
   FaKey,
+  FaUserShield,
+  FaDatabase,
+  FaRobot,
+  FaSitemap,
 } from "react-icons/fa"
 
 import {
   SiTailwindcss,
-  SiFramer,
   SiExpress,
   SiMongodb,
   SiMysql,
   SiPostman,
-  SiFigma,
   SiVercel,
   SiRender,
-  SiCloudflare,
-  SiGoogle,
-  SiOpenai,
+  SiCloudinary,
+  SiNextdotjs,
+  SiBootstrap,
+  SiDocker,
+  SiCplusplus,
+  SiC,
+  SiSocketdotio,
+  SiRazorpay,
 } from "react-icons/si"
+import { FaPlug } from "react-icons/fa"
+
+import { MdEmail } from "react-icons/md"
 
 const skillsData = [
   {
@@ -155,48 +214,67 @@ const skillsData = [
       { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
       { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
       { name: "React", icon: <FaReact className="text-cyan-400" /> },
+      { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
-      // { name: "Framer Motion", icon: <SiFramer className="text-pink-400" /> },
+      { name: "Bootstrap", icon: <SiBootstrap className="text-purple-500" /> },
     ],
   },
+
   {
     title: "Backend",
     skills: [
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
       { name: "Express.js", icon: <SiExpress className="text-gray-300" /> },
       { name: "PHP", icon: <FaPhp className="text-indigo-400" /> },
-      { name: "REST APIs", icon: <SiPostman className="text-orange-400" /> },
-      { name: "Authentication (Clerk)", icon: <FaKey className="text-yellow-300" /> },
+      { name: "JWT Auth", icon: <FaKey className="text-yellow-300" /> },
+      { name: "Nodemailer", icon: <MdEmail className="text-orange-400" /> },
+      { name: "Clerk Auth", icon: <FaUserShield className="text-purple-400" /> },
+      { name: "Socket.io", icon: <SiSocketdotio className="text-white" /> },
+      { name: "Rest API", icon: <FaPlug className="text-green-400" /> },
     ],
   },
+
   {
     title: "Database",
     skills: [
       { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
       { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
-      { name: "IndexedDB", icon: <SiMongodb className="text-green-300" /> },
+      { name: "IndexedDB", icon: <FaDatabase className="text-green-300" /> },
     ],
   },
+
   {
     title: "AI & APIs",
     skills: [
-      { name: "Groq API", icon: <SiCloudflare className="text-orange-400" /> },
-      { name: "OpenRouter API", icon: <SiOpenai className="text-green-400" /> },
-      { name: "Gemini API", icon: <SiGoogle className="text-blue-400" /> },
-      { name: "Monaco Editor", icon: <FaJs className="text-yellow-400" /> },
-      { name: "GSAP", icon: <SiFramer className="text-green-400" /> },
-      // { name: "Locomotive JS", icon: <SiFramer className="text-purple-400" /> },
+      { name: "Groq API", icon: <FaRobot className="text-orange-400" /> },
+      { name: "OpenRouter API", icon: <FaRobot className="text-green-400" /> },
+      { name: "Gemini API", icon: <FaRobot className="text-blue-400" /> },
+      { name: "EmailJS", icon: <MdEmail className="text-yellow-400" /> },
+      { name: "Cloudinary", icon: <SiCloudinary className="text-blue-400" /> },
+      { name: "Razorpay", icon: <SiRazorpay className="text-blue-500" /> },
+      { name: "Glot.io API", icon: <FaJs className="text-yellow-400" /> },
     ],
   },
+
+  {
+    title: "Languages & Core",
+    skills: [
+      { name: "C++ (DSA)", icon: <SiCplusplus className="text-blue-500" /> },
+      { name: "C", icon: <SiC className="text-blue-400" /> },
+      { name: "DSA", icon: <FaSitemap className="text-yellow-300" /> },
+    ],
+  },
+
   {
     title: "Tools & Platforms",
     skills: [
       { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
       { name: "GitHub", icon: <FaGithub className="text-gray-200" /> },
       { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
-      // { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
       { name: "Vercel", icon: <SiVercel className="text-white" /> },
       { name: "Render", icon: <SiRender className="text-blue-400" /> },
+      { name: "Docker", icon: <SiDocker className="text-blue-400" /> },
+      { name: "Cursor AI", icon: <FaRobot className="text-purple-400" /> },
     ],
   },
 ]
