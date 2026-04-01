@@ -24,6 +24,8 @@ import earphone from "../assets/images/earphone.png"
 import weather from "../assets/images/weather.png"
 import golf from "../assets/images/golf.png"
 import tracker from "../assets/images/tracker.png"
+import prompthub from "../assets/images/prompthub.png"
+import jewellery from "../assets/images/jewellery.png"
 
 const projectsData = [
 {
@@ -43,9 +45,32 @@ const projectsData = [
     "Real-time code execution"
   ]
 },
-
 {
   id: 2,
+  title: "Ganesh Jewellery - Full Stack E-commerce Platform",
+  category: "freelancing",
+  image: jewellery,
+  desc: "A complete full-stack e-commerce web application developed for a jewellery business with both user and admin panels. The platform enables product browsing, cart and wishlist management, secure online payments using Cashfree, and real-time notifications using Socket.IO, providing a seamless shopping experience.",
+  tech: "React, Node.js, Express, MongoDB, Tailwind CSS, Cashfree API, Nodemailer, Socket.IO",
+  github: "https://github.com/Bhumika-Sahu-bit/ganesh-jewellery",
+  live: "https://ganesh-jewellery.vercel.app", 
+  features: [
+    "Full-stack MERN e-commerce platform with admin & user panel",
+    "Secure online payments integration using Cashfree (with COD option)",
+    "Add to cart and wishlist functionality",
+    "Real-time notifications using Socket.IO",
+    "User authentication and profile management",
+    "Order placement with Buy Now and cart system",
+    "Admin dashboard for product and order management",
+    "Email notifications using Nodemailer",
+    "Product enquiry and contact with seller feature",
+    "Fully responsive UI built with Tailwind CSS",
+    "Optimized performance and smooth user experience"
+  ]
+},
+
+{
+  id: 3,
   title: "AI Website Builder",
   category: "fullstack",
   image: aiwebsite,
@@ -62,7 +87,7 @@ const projectsData = [
 },
 
 {
-  id: 3,
+  id: 4,
   title: "AI Code Reviewer",
   category: "fullstack",
   image: codereview,
@@ -79,7 +104,7 @@ const projectsData = [
 },
 
 {
-  id: 4,
+  id: 5,
   title: "Kota Refrigeration Website",
   category: "freelancing",
   image: kota,
@@ -96,7 +121,7 @@ const projectsData = [
 },
 
 {
-  id: 5,
+  id: 6,
   title: "AI Image Enhancer",
   category: "frontend",
   image: imageenhancer,
@@ -111,9 +136,29 @@ const projectsData = [
     "Fast API processing"
   ]
 },
+{
+  id: 7,
+  title: "Prompt Hub - AI Prompt Sharing Platform",
+  category: "fullstack",
+  image: prompthub, // apni image import kar lena
+  desc: "A full-stack MERN application that provides a centralized platform for discovering, managing, and sharing high-quality AI prompts. It helps developers, creators, and learners improve responses from AI tools like ChatGPT and Gemini through structured and optimized prompt collections.",
+  tech: "React, Node.js, Express, MongoDB, Tailwind CSS",
+  github: "https://github.com/Bhumika-Sahu-bit/Prompt-Hub",
+  live: "https://prompt-hub-xi-umber.vercel.app/",
+  features: [
+    "Full-stack MERN application with structured prompt management",
+    "Create, store, and organize AI prompts in a centralized system",
+    "Categorized prompts for coding, content creation, and productivity",
+    "User-friendly interface with responsive design",
+    "Optimized prompt structure for better AI responses",
+    "Easy access and reusable prompt system",
+    "Designed for developers, creators, and learners",
+    "Improves prompt engineering and AI productivity"
+  ]
+}
 
 {
-  id: 6,
+  id: 8,
   title: "College Library System",
   category: "fullstack",
   image: collegelibrary,
@@ -130,7 +175,7 @@ const projectsData = [
 },
 
 {
-  id: 7,
+  id: 9,
   title: "SnapMood",
   category: "fullstack",
   image: snapmood,
@@ -147,7 +192,7 @@ const projectsData = [
 },
 
 {
-  id: 8,
+  id: 10,
   title: "Quiz Web",
   category: "frontend",
   image: quiz,
@@ -164,7 +209,7 @@ const projectsData = [
 },
 
 {
-  id: 9,
+  id: 11,
   title: "Leaderboard App",
   category: "frontend",
   image: leaderboard,
@@ -180,7 +225,7 @@ const projectsData = [
 },
 
 {
-  id: 10,
+  id: 12,
   title: "Rejouice Clone",
   category: "clones",
   image: rejouice,
@@ -196,8 +241,8 @@ const projectsData = [
 },
 
 {
-  id: 11,
-  title: "Animated Website",
+  id: 13,
+  title: "Animated Fanta Website",
   category: "frontend",
   image: fanta,
   desc: "A modern frontend project showcasing smooth animations and transitions using GSAP.",
@@ -212,7 +257,7 @@ const projectsData = [
 },
 
 {
-  id: 12,
+  id: 14,
   title: "Magma Clone",
   category: "clones",
   image: magma,
@@ -228,7 +273,7 @@ const projectsData = [
 },
 
 {
-  id: 13,
+  id: 15,
   title: "Hotel Booking Website",
   category: "frontend",
   image: travel,
@@ -244,7 +289,7 @@ const projectsData = [
 },
 
 {
-  id: 14,
+  id: 16,
   title: "Weather App",
   category: "frontend",
   image: weather,
@@ -260,7 +305,7 @@ const projectsData = [
 },
 
 {
-  id: 15,
+  id: 17,
   title: "E-commerce Website",
   category: "frontend",
   image: ecommerce,
@@ -276,7 +321,7 @@ const projectsData = [
 },
 
 {
-  id: 16,
+  id: 18,
   title: "Earphone Website",
   category: "frontend",
   image: earphone,
@@ -292,7 +337,7 @@ const projectsData = [
 },
 
 {
-  id: 17,
+  id: 19,
   title: "Memory Game",
   category: "frontend",
   image: memory,
@@ -308,7 +353,7 @@ const projectsData = [
 },
 
 {
-  id: 18,
+  id: 20,
   title: "Image Slider",
   category: "frontend",
   image: imgslider,
@@ -324,7 +369,7 @@ const projectsData = [
 },
 
 {
-  id: 19,
+  id: 21,
   title: "Golf Website",
   category: "clones",
   image: golf,
@@ -340,7 +385,7 @@ const projectsData = [
 },
 
 {
-  id: 20,
+  id: 22,
   title: "Spotify Clone",
   category: "clones",
   image: spotify,
@@ -355,7 +400,7 @@ const projectsData = [
   ]
 },
 {
-  id: 21,
+  id: 23,
   title: "Real-Time Location Tracker",
   category: "fullstack",
   image: tracker, 
