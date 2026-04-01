@@ -10,6 +10,14 @@ const experiences = [
     tech: ["HTML", "CSS", "JavaScript", "React"],
     certificate: certificate, 
   },
+  {
+    date: "2025",
+  role: "Freelance",
+  company: "Ganesh Art Jewellery",
+  desc: "Developed a premium jewellery e-commerce website using modern technologies with a focus on performance and user experience. Built a fully responsive UI with product showcase, category navigation, and smooth interactions. Integrated EmailJS for contact functionality and optimized the application for fast loading and scalability.",
+  tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Cashfree API", "Nodemailer", "Socket.IO"],
+  live: "https://ganesh-jewellery.vercel.app"
+  },
  {
   date: "2025",
   role: "Freelance",
