@@ -37,23 +37,25 @@ Deployment: Vercel
 📸 Screenshots
 
 🏠 Homepage
-<img width="1847" height="772" alt="image" src="https://github.com/user-attachments/assets/26296bec-e022-46d7-b8a1-0efed2aa931c" />
+<img width="1877" height="876" alt="Screenshot 2026-04-01 205735" src="https://github.com/user-attachments/assets/96a9d30a-dec1-4bbf-81e6-3fd516a025ae" />
 
 
 🚀 Projects Section
-<img width="1828" height="1038" alt="image" src="https://github.com/user-attachments/assets/63ecba5f-8efd-4a25-9269-da93cd1f107e" />
+<img width="1812" height="883" alt="Screenshot 2026-04-01 205755" src="https://github.com/user-attachments/assets/0414ad7d-65e4-40cf-8a60-b96f2c255a20" />
+
 
 
 📬 tech skill
-<img width="1866" height="1021" alt="image" src="https://github.com/user-attachments/assets/e887a503-d723-4c04-8a75-da1e8168f093" />
+<img width="1812" height="871" alt="Screenshot 2026-04-01 205815" src="https://github.com/user-attachments/assets/ce872131-b255-40b4-8495-f1cee8d1a4d4" />
+
 
 
 🚀 Run Locally
 # Clone repository
-git clone https://github.com/luckygole/Portfolio-2026
+
 
 # Navigate to project
-cd Portfolio-2026
+cd portfolio
 
 # Install dependencies
 npm install
