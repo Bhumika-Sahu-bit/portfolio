@@ -155,7 +155,7 @@ const projectsData = [
     "Designed for developers, creators, and learners",
     "Improves prompt engineering and AI productivity"
   ]
-}
+},
 
 {
   id: 8,
