@@ -52,7 +52,7 @@ Deployment: Vercel
 
 🚀 Run Locally
 # Clone repository
-
+https://github.com/Bhumika-Sahu-bit/portfolio.git
 
 # Navigate to project
 cd portfolio
