@@ -10,12 +10,12 @@ import kota from "../assets/images/kota.png"
 import imageenhancer from "../assets/images/imageenhancer.png"
 import collegelibrary from "../assets/images/collegelibrary.png"
 import snapmood from "../assets/images/snapmood.png"
-import memory from "../assets/images/memory.png"
+// import memory from "../assets/images/memory.png"
 import spotify from "../assets/images/spotify.png"
 import leaderboard from "../assets/images/leaderboard.png"
 import rejouice from "../assets/images/rejuice.png"
 import quiz from "../assets/images/quiz.png"
-import imgslider from "../assets/images/img-slide.png"
+// import imgslider from "../assets/images/img-slide.png"
 import ecommerce from "../assets/images/e-commerce.png"
 import fanta from "../assets/images/fanta.png"
 import magma from "../assets/images/magma.png"
@@ -26,6 +26,7 @@ import golf from "../assets/images/golf.png"
 import tracker from "../assets/images/tracker.png"
 import prompthub from "../assets/images/prompthub.png"
 import jewellery from "../assets/images/jewellery.png"
+import bhargava from "../assets/images/bhargava.png"
 
 const projectsData = [
 {
@@ -190,9 +191,27 @@ const projectsData = [
     "Dynamic feed"
   ]
 },
-
 {
   id: 10,
+  title: "Bhargava Coaching Website",
+  category: "freelancing",
+  image: bhargava, // replace with your image variable
+  desc: "A modern and responsive coaching institute website designed to showcase courses, faculty details, and student-focused features with an engaging UI for better user experience.",
+  tech: "React, Tailwind CSS",
+  github: "https://github.com/luckygole/Bhargava-coaching-",
+  live: "https://bhargava-coaching.vercel.app/", // add if deployed
+  features: [
+    "Responsive coaching website UI",
+    "Course and program showcase",
+    "Modern landing page design",
+    "Student-friendly interface",
+    "Clean navigation system",
+    "Optimized for all devices"
+  ]
+},
+
+{
+  id: 11,
   title: "Quiz Web",
   category: "frontend",
   image: quiz,
@@ -209,7 +228,7 @@ const projectsData = [
 },
 
 {
-  id: 11,
+  id: 12,
   title: "Leaderboard App",
   category: "frontend",
   image: leaderboard,
@@ -225,7 +244,7 @@ const projectsData = [
 },
 
 {
-  id: 12,
+  id: 13,
   title: "Rejouice Clone",
   category: "clones",
   image: rejouice,
@@ -241,7 +260,7 @@ const projectsData = [
 },
 
 {
-  id: 13,
+  id: 14,
   title: "Animated Fanta Website",
   category: "frontend",
   image: fanta,
@@ -257,7 +276,7 @@ const projectsData = [
 },
 
 {
-  id: 14,
+  id: 15,
   title: "Magma Clone",
   category: "clones",
   image: magma,
@@ -273,7 +292,7 @@ const projectsData = [
 },
 
 {
-  id: 15,
+  id: 16,
   title: "Hotel Booking Website",
   category: "frontend",
   image: travel,
@@ -289,7 +308,7 @@ const projectsData = [
 },
 
 {
-  id: 16,
+  id: 17,
   title: "Weather App",
   category: "frontend",
   image: weather,
@@ -305,7 +324,7 @@ const projectsData = [
 },
 
 {
-  id: 17,
+  id: 18,
   title: "E-commerce Website",
   category: "frontend",
   image: ecommerce,
@@ -321,7 +340,7 @@ const projectsData = [
 },
 
 {
-  id: 18,
+  id: 19,
   title: "Earphone Website",
   category: "frontend",
   image: earphone,
@@ -336,40 +355,40 @@ const projectsData = [
   ]
 },
 
-{
-  id: 19,
-  title: "Memory Game",
-  category: "frontend",
-  image: memory,
-  desc: "A browser-based memory game where users match cards, improving logic and engagement.",
-  tech: "HTML, CSS, JS",
-  github: "https://github.com/Bhumika-Sahu-bit/game",
-  live: "https://bhumika-sahu-bit.github.io/game/",
-  features: [
-    "Card matching logic",
-    "Interactive gameplay",
-    "Fun UI"
-  ]
-},
+// {
+//   id: 19,
+//   title: "Memory Game",
+//   category: "frontend",
+//   image: memory,
+//   desc: "A browser-based memory game where users match cards, improving logic and engagement.",
+//   tech: "HTML, CSS, JS",
+//   github: "https://github.com/Bhumika-Sahu-bit/game",
+//   live: "https://bhumika-sahu-bit.github.io/game/",
+//   features: [
+//     "Card matching logic",
+//     "Interactive gameplay",
+//     "Fun UI"
+//   ]
+// },
+
+// {
+//   id: 20,
+//   title: "Image Slider",
+//   category: "frontend",
+//   image: imgslider,
+//   desc: "A responsive image slider with smooth transitions and navigation controls.",
+//   tech: "HTML, CSS, JS",
+//   github: "https://github.com/Bhumika-Sahu-bit/image-slider",
+//   live: "https://bhumika-sahu-bit.github.io/image-slider/",
+//   features: [
+//     "Smooth transitions",
+//     "Navigation controls",
+//     "Responsive UI"
+//   ]
+// },
 
 {
   id: 20,
-  title: "Image Slider",
-  category: "frontend",
-  image: imgslider,
-  desc: "A responsive image slider with smooth transitions and navigation controls.",
-  tech: "HTML, CSS, JS",
-  github: "https://github.com/Bhumika-Sahu-bit/image-slider",
-  live: "https://bhumika-sahu-bit.github.io/image-slider/",
-  features: [
-    "Smooth transitions",
-    "Navigation controls",
-    "Responsive UI"
-  ]
-},
-
-{
-  id: 21,
   title: "Golf Website",
   category: "clones",
   image: golf,
@@ -385,7 +404,7 @@ const projectsData = [
 },
 
 {
-  id: 22,
+  id: 21,
   title: "Spotify Clone",
   category: "clones",
   image: spotify,
@@ -400,7 +419,7 @@ const projectsData = [
   ]
 },
 {
-  id: 23,
+  id: 22,
   title: "Real-Time Location Tracker",
   category: "fullstack",
   image: tracker, 
