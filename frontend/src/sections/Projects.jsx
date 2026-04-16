@@ -227,24 +227,24 @@ const projectsData = [
   ]
 },
 
-{
-  id: 12,
-  title: "Leaderboard App",
-  category: "frontend",
-  image: leaderboard,
-  desc: "A React-based application displaying ranked user data dynamically with sorting and UI rendering logic.",
-  tech: "React, JavaScript",
-  github: "https://github.com/Bhumika-Sahu-bit/leaderboard",
-  live: "https://leaderboard-nu-opal.vercel.app",
-  features: [
-    "Dynamic ranking",
-    "Sorting system",
-    "Clean UI"
-  ]
-},
+// {
+//   id: 12,
+//   title: "Leaderboard App",
+//   category: "frontend",
+//   image: leaderboard,
+//   desc: "A React-based application displaying ranked user data dynamically with sorting and UI rendering logic.",
+//   tech: "React, JavaScript",
+//   github: "https://github.com/Bhumika-Sahu-bit/leaderboard",
+//   live: "https://leaderboard-nu-opal.vercel.app",
+//   features: [
+//     "Dynamic ranking",
+//     "Sorting system",
+//     "Clean UI"
+//   ]
+// },
 
 {
-  id: 13,
+  id: 12,
   title: "Rejouice Clone",
   category: "clones",
   image: rejouice,
@@ -259,24 +259,24 @@ const projectsData = [
   ]
 },
 
-{
-  id: 14,
-  title: "Animated Fanta Website",
-  category: "frontend",
-  image: fanta,
-  desc: "A modern frontend project showcasing smooth animations and transitions using GSAP.",
-  tech: "HTML, CSS, JS, GSAP",
-  github: "https://github.com/Bhumika-Sahu-bit/animated-website",
-  live: "https://bhumika-sahu-bit.github.io/animated-website/",
-  features: [
-    "Smooth animations",
-    "Interactive UI",
-    "Modern design"
-  ]
-},
+// {
+//   id: 14,
+//   title: "Animated Fanta Website",
+//   category: "frontend",
+//   image: fanta,
+//   desc: "A modern frontend project showcasing smooth animations and transitions using GSAP.",
+//   tech: "HTML, CSS, JS, GSAP",
+//   github: "https://github.com/Bhumika-Sahu-bit/animated-website",
+//   live: "https://bhumika-sahu-bit.github.io/animated-website/",
+//   features: [
+//     "Smooth animations",
+//     "Interactive UI",
+//     "Modern design"
+//   ]
+// },
 
 {
-  id: 15,
+  id: 13,
   title: "Magma Clone",
   category: "clones",
   image: magma,
@@ -292,7 +292,7 @@ const projectsData = [
 },
 
 {
-  id: 16,
+  id: 14,
   title: "Hotel Booking Website",
   category: "frontend",
   image: travel,
@@ -308,7 +308,7 @@ const projectsData = [
 },
 
 {
-  id: 17,
+  id: 15,
   title: "Weather App",
   category: "frontend",
   image: weather,
@@ -323,24 +323,24 @@ const projectsData = [
   ]
 },
 
-{
-  id: 18,
-  title: "E-commerce Website",
-  category: "frontend",
-  image: ecommerce,
-  desc: "A frontend e-commerce platform showcasing products and shopping cart UI with responsive design.",
-  tech: "HTML, CSS, JS",
-  github: "https://github.com/Bhumika-Sahu-bit/e-commerce-website",
-  live: "https://bhumika-sahu-bit.github.io/e-commerce-website/",
-  features: [
-    "Product listing",
-    "Cart UI",
-    "Responsive design"
-  ]
-},
+// {
+//   id: 18,
+//   title: "E-commerce Website",
+//   category: "frontend",
+//   image: ecommerce,
+//   desc: "A frontend e-commerce platform showcasing products and shopping cart UI with responsive design.",
+//   tech: "HTML, CSS, JS",
+//   github: "https://github.com/Bhumika-Sahu-bit/e-commerce-website",
+//   live: "https://bhumika-sahu-bit.github.io/e-commerce-website/",
+//   features: [
+//     "Product listing",
+//     "Cart UI",
+//     "Responsive design"
+//   ]
+// },
 
 {
-  id: 19,
+  id: 16,
   title: "Earphone Website",
   category: "frontend",
   image: earphone,
@@ -388,7 +388,7 @@ const projectsData = [
 // },
 
 {
-  id: 20,
+  id: 17,
   title: "Golf Website",
   category: "clones",
   image: golf,
@@ -403,23 +403,23 @@ const projectsData = [
   ]
 },
 
+// {
+//   id: 21,
+//   title: "Spotify Clone",
+//   category: "clones",
+//   image: spotify,
+//   desc: "A frontend clone of Spotify built using HTML and CSS, replicating its layout and UI design.",
+//   tech: "HTML, CSS",
+//   github: "https://github.com/Bhumika-Sahu-bit/spotify-clone",
+//   live: "https://bhumika-sahu-bit.github.io/spotify-clone/",
+//   features: [
+//     "UI replication",
+//     "Clean layout",
+//     "Responsive design"
+//   ]
+// },
 {
-  id: 21,
-  title: "Spotify Clone",
-  category: "clones",
-  image: spotify,
-  desc: "A frontend clone of Spotify built using HTML and CSS, replicating its layout and UI design.",
-  tech: "HTML, CSS",
-  github: "https://github.com/Bhumika-Sahu-bit/spotify-clone",
-  live: "https://bhumika-sahu-bit.github.io/spotify-clone/",
-  features: [
-    "UI replication",
-    "Clean layout",
-    "Responsive design"
-  ]
-},
-{
-  id: 22,
+  id: 18,
   title: "Real-Time Location Tracker",
   category: "fullstack",
   image: tracker, 
