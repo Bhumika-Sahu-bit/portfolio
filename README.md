@@ -93,8 +93,11 @@ Bhumika Sahu
 
 📬 Connect
 🌐 Portfolio https://portfolio-ebon-rho-fi2sxp0edj.vercel.app/
+
 📧 bhumi16124@gmail.com
+
 💼 LinkedIn https://www.linkedin.com/in/bhumika-sahu-b178a22b2/
+
 📄 License
 
 MIT License - Free for personal and professional use
