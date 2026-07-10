@@ -1,6 +1,7 @@
 
 import React from "react"
 import { motion } from "framer-motion"
+import bhumi from "../assets/images/bhumi.jpeg"
 
 const About = () => {
   return (
@@ -71,7 +72,8 @@ const About = () => {
               flex items-center justify-center
               text-4xl sm:text-5xl lg:text-6xl
             ">
-              👩‍💻
+              {/* 👩‍💻 */}
+              <img src={bhumi} alt ="Bhumika Sahu" className = "absolute inset-0 w-full h-full object-cover rounded-2xl" />
             </div>
           </div>
         </motion.div>
