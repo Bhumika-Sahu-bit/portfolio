@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import Background from "../canvas/Background"
-import resume from "../assets/files/BhumikaSahuResume.pdf"
+import resume from "../../public/BhumikaSahuResume.pdf"
 
 const Hero = () => {
   return (
